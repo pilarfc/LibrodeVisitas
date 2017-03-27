@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Libro de visitas </h1>
+
+  <article id = "contenedorDeComentarios">
+
+    <p style= "font-size: 24px; color:red"> ¡Hola Mundo! </p>
+
+
+  </article>
+<h2> Agregar Comentario</h2>
+
+  <hr>
+
+  <button id = "textoGrande" onclick = "cambiarTextoGrande()"> Texto Grande </button>
+  <button id = "textoMediano"onclick = "cambiarTextoMediano()"> Texto Mediano </button>
+  <button id = "textoChico" onclick = "cambiarTextoChico()"> Texto Chico </button>
+  <button id = "colorTexto" onclick = "colorTexto()"> Color Texto </button>
+  <button id = "colorFondo" onclick = "colorFondo()"> Color Fondo </button>
+  <button id = "alinearIzquierda" onclick = "alinearIzquierda()"> Alinear Izquierda </button>
+  <button id = "centrar" onclick = "centrar()"> Centrar </button>
+  <button id = "alinearDerecha" onclick = "alinearDerecha()"> Alinear Derecha </button>
+  <button id = "agregarImagen" onclick = "agregarImagen()"> Agregar Imagen </button>
+  <button id = "agregarLista" onclick = "agregarLista()"> Agregar Lista </button>
+ <br>
+
+  <textarea oninput = "crearPreview(this)" id ="contenidoComentario" name = "name" rows = "8" cols = "80"> </textarea>
+
+  <h3>Contenido</h3>
+  <section id = "preview"></section>
+ <hr>
+  <button id = "enviarComentario" onclick = "enviarComentario()">Enviar </button>
+
+<script src = "librovisitas.js"></script>
+  </body>
+</html>
